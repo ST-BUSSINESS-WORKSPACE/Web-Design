@@ -12,6 +12,11 @@
     --transition: all 0.3s ease;
 }
 
+.anchor{
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -606,74 +611,6 @@ footer {
     font-size: 14px;
 }
 
-/* Responsive Design */
-@media (max-width: 1200px) {
-
-    .categories-grid,
-    .products-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media (max-width: 992px) {
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    nav ul li {
-        margin: 0 12px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    .categories-grid,
-    .products-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .header-content {
-        flex-direction: column;
-    }
-
-    nav ul {
-        margin: 20px 0;
-    }
-
-    .hero {
-        height: 500px;
-    }
-
-    .slide-content h1 {
-        font-size: 36px;
-    }
-}
-
-@media (max-width: 576px) {
-
-    .categories-grid,
-    .products-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-
-    .newsletter-form {
-        flex-direction: column;
-    }
-
-    .newsletter-input {
-        border-radius: 50px;
-        margin-bottom: 10px;
-    }
-
-    .newsletter-btn {
-        border-radius: 50px;
-        padding: 15px;
-    }
-}
 
 /* Animation Keyframes */
 @keyframes fadeIn {
@@ -881,4 +818,846 @@ footer {
 .overlay.active {
     opacity: 1;
     visibility: visible;
+}
+
+/* =========================
+   LARGE DEVICES — DETAILED MEDIA QUERIES
+   ========================= */
+
+/* ≥1400px: Big desktops, iMacs, WQHD */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1600px;
+    }
+
+    header .logo {
+        font-size: 34px;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+        padding: 14px 0;
+    }
+
+    .search-box input {
+        width: 280px;
+        font-size: 16px;
+    }
+
+    .hero {
+        height: 750px;
+    }
+
+    .slide-content h1 {
+        font-size: 60px;
+    }
+
+    .slide-content p {
+        font-size: 20px;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 32px;
+    }
+
+    .category-card {
+        height: 380px;
+    }
+
+    .category-overlay h3 {
+        font-size: 26px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 36px;
+    }
+
+    .product-image {
+        height: 340px;
+    }
+
+    .product-title {
+        font-size: 20px;
+    }
+
+    .current-price {
+        font-size: 22px;
+    }
+}
+
+/* ≥1600px: WQHD / Ultra-wide monitors */
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1720px;
+    }
+
+    .header-main {
+        padding: 25px 0;
+    }
+
+    .logo {
+        font-size: 38px;
+    }
+
+    nav ul {
+        gap: 36px;
+    }
+
+    .hero {
+        height: 820px;
+    }
+
+    .slide-content {
+        max-width: 900px;
+        padding: 60px;
+    }
+
+    .slide-content h1 {
+        font-size: 66px;
+    }
+
+    .slide-content p {
+        font-size: 22px;
+    }
+
+    .category-card {
+        height: 420px;
+    }
+
+    .product-image {
+        height: 380px;
+    }
+
+    .product-title {
+        font-size: 22px;
+    }
+}
+
+/* ≥1920px: Full HD wide desktop, standard 1080p monitors */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1820px;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    .hero {
+        height: 900px;
+    }
+
+    .slide-content h1 {
+        font-size: 72px;
+    }
+
+    .slide-content p {
+        font-size: 24px;
+    }
+
+    .categories-grid {
+        gap: 40px;
+    }
+
+    .category-card {
+        height: 450px;
+    }
+
+    .products-grid {
+        gap: 40px;
+    }
+
+    .product-image {
+        height: 420px;
+    }
+
+    .product-title {
+        font-size: 24px;
+    }
+
+    .current-price {
+        font-size: 24px;
+    }
+}
+
+/* ≥2560px: 2K / QHD / Ultra-Wide */
+@media (min-width: 2560px) {
+    .container {
+        max-width: 2200px;
+    }
+
+    body {
+        font-size: 20px;
+    }
+
+    .hero {
+        height: 1000px;
+    }
+
+    .slide-content h1 {
+        font-size: 80px;
+    }
+
+    .slide-content p {
+        font-size: 26px;
+    }
+
+    .categories-grid {
+        gap: 50px;
+    }
+
+    .category-card {
+        height: 500px;
+    }
+
+    .products-grid {
+        gap: 50px;
+    }
+
+    .product-image {
+        height: 480px;
+    }
+}
+
+/* ≥3840px: 4K UHD */
+@media (min-width: 3840px) {
+    .container {
+        max-width: 3200px;
+    }
+
+    body {
+        font-size: 22px;
+    }
+
+    .hero {
+        height: 1200px;
+    }
+
+    .slide-content h1 {
+        font-size: 96px;
+    }
+
+    .slide-content p {
+        font-size: 30px;
+    }
+
+    .categories-grid {
+        gap: 60px;
+    }
+
+    .category-card {
+        height: 600px;
+    }
+
+    .products-grid {
+        gap: 60px;
+    }
+
+    .product-image {
+        height: 600px;
+    }
+
+    .product-title {
+        font-size: 28px;
+    }
+
+    .current-price {
+        font-size: 28px;
+    }
+}
+
+/* =========================
+   MEDIUM DEVICES — LAPTOPS & TABLETS LANDSCAPE
+   ========================= */
+
+/* ≤1399px: Large laptops */
+@media (max-width: 1399px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    nav ul {
+        gap: 22px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .search-box input {
+        width: 200px;
+    }
+
+    .hero {
+        height: 600px;
+    }
+
+    .slide-content h1 {
+        font-size: 48px;
+    }
+
+    .slide-content p {
+        font-size: 18px;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+    }
+
+    .category-card {
+        height: 320px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+    }
+
+    .product-image {
+        height: 300px;
+    }
+}
+
+/* ≤1200px: Standard laptops */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1100px;
+    }
+
+    .header-main {
+        padding: 18px 0;
+    }
+
+    .logo {
+        font-size: 26px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+        padding: 10px 0;
+    }
+
+    .hero {
+        height: 550px;
+    }
+
+    .slide-content h1 {
+        font-size: 44px;
+    }
+
+    .slide-content p {
+        font-size: 17px;
+    }
+
+    .categories-grid {
+        gap: 24px;
+    }
+
+    .category-card {
+        height: 300px;
+    }
+
+    .products-grid {
+        gap: 24px;
+    }
+
+    .product-image {
+        height: 280px;
+    }
+}
+
+/* ≤1024px: Tablets landscape / small laptops */
+@media (max-width: 1024px) {
+    .container {
+        max-width: 940px;
+    }
+
+    nav ul {
+        gap: 18px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .search-box input {
+        width: 160px;
+    }
+
+    .hero {
+        height: 500px;
+    }
+
+    .slide-content {
+        padding: 40px;
+        max-width: 600px;
+    }
+
+    .slide-content h1 {
+        font-size: 40px;
+    }
+
+    .slide-content p {
+        font-size: 16px;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .category-card {
+        height: 280px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-image {
+        height: 260px;
+    }
+}
+
+/* =========================
+   SMALL & EXTRA-SMALL DEVICES
+   ========================= */
+
+/* ≤992px: Tablets portrait / small laptops */
+@media (max-width: 992px) {
+    .container {
+        max-width: 880px;
+        padding: 0 18px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+        padding: 8px 0;
+    }
+
+    .search-box input {
+        width: 140px;
+    }
+
+    .hero {
+        height: 460px;
+    }
+
+    .slide-content h1 {
+        font-size: 36px;
+    }
+
+    .slide-content p {
+        font-size: 16px;
+    }
+
+    .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .category-card {
+        height: 240px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .product-image {
+        height: 220px;
+    }
+}
+
+/* ≤768px: Small tablets / large phones */
+@media (max-width: 768px) {
+    .container {
+        max-width: 720px;
+        padding: 0 16px;
+    }
+
+    .header-top-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 6px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .hero {
+        height: 420px;
+    }
+
+    .slide-content {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .slide-content h1 {
+        font-size: 32px;
+    }
+
+    .slide-content p {
+        font-size: 15px;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .category-card {
+        height: 220px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .product-image {
+        height: 200px;
+    }
+}
+
+/* ≤576px: Mobile phones */
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 14px;
+    }
+
+    .header-content {
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    nav ul {
+        gap: 3px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    .search-box {
+        padding: 8px 14px;
+    }
+
+    .search-box input {
+        width: 100px;
+        font-size: 13px;
+    }
+
+    .hero {
+        height: 360px;
+    }
+
+    .slide-content {
+        padding: 20px;
+    }
+
+    .slide-content h1 {
+        font-size: 26px;
+    }
+
+    .slide-content p {
+        font-size: 14px;
+    }
+
+    .categories-grid,
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .category-card,
+    .product-image {
+        height: 200px;
+    }
+
+    .product-title {
+        font-size: 16px;
+    }
+}
+
+/* ≤360px: Extra small phones */
+@media (max-width: 360px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    .search-box input {
+        width: 100px;
+        font-size: 12px;
+    }
+
+    .slide-content h1 {
+        font-size: 22px;
+    }
+
+    .slide-content p {
+        font-size: 12px;
+    }
+
+    .category-card,
+    .product-image {
+        height: 160px;
+    }
+
+    .product-title {
+        font-size: 14px;
+    }
+}
+
+/* =========================
+   ULTRA-SMALL DEVICES
+   ========================= */
+
+/* ≤320px: Tiny smartphones */
+@media (max-width: 320px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+        padding: 6px 0;
+    }
+
+    .search-box {
+        padding: 6px 10px;
+    }
+
+    .search-box input {
+        width: 70px;
+        font-size: 11px;
+    }
+
+    .hero {
+        height: 280px;
+    }
+
+    .slide-content {
+        padding: 14px;
+    }
+
+    .slide-content h1 {
+        font-size: 20px;
+    }
+
+    .slide-content p {
+        font-size: 11px;
+    }
+
+    .categories-grid,
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .category-card,
+    .product-image {
+        height: 140px;
+    }
+
+    .product-title {
+        font-size: 13px;
+    }
+
+    .current-price {
+        font-size: 14px;
+    }
+}
+
+/* ≤280px: Very old Androids / mini screens */
+@media (max-width: 280px) {
+    .logo {
+        font-size: 14px;
+    }
+
+    nav ul {
+        gap: 4px;
+    }
+
+    nav ul li a {
+        font-size: 11px;
+    }
+
+    .search-box input {
+        width: 60px;
+        font-size: 10px;
+    }
+
+    .hero {
+        height: 240px;
+    }
+
+    .slide-content h1 {
+        font-size: 18px;
+    }
+
+    .slide-content p {
+        font-size: 10px;
+    }
+
+    .category-card,
+    .product-image {
+        height: 120px;
+    }
+
+    .product-title {
+        font-size: 12px;
+    }
+}
+
+/* ≤240px: Micro devices (rare, old feature phones / watches) */
+@media (max-width: 240px) {
+    body {
+        font-size: 11px;
+    }
+
+    .logo {
+        font-size: 12px;
+    }
+
+    nav ul li a {
+        font-size: 10px;
+    }
+
+    .search-box {
+        padding: 4px 8px;
+    }
+
+    .search-box input {
+        width: 50px;
+        font-size: 9px;
+    }
+
+    .hero {
+        height: 200px;
+    }
+
+    .slide-content h1 {
+        font-size: 16px;
+    }
+
+    .slide-content p {
+        font-size: 9px;
+    }
+
+    .category-card,
+    .product-image {
+        height: 100px;
+    }
+
+    .product-title {
+        font-size: 11px;
+    }
+
+    .current-price {
+        font-size: 12px;
+    }
+}
+
+/* =========================
+   INFINIX DEVICES (375px – 430px)
+   Covers Note, Zero, GT, Hot, Smart
+   ========================= */
+@media (min-width: 375px) and (max-width: 430px) {
+    .container {
+        padding: 0 14px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav ul {
+        font-size: 10px;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    .search-box {
+        padding: 8px 14px;
+    }
+
+    .search-box input {
+        width: 120px;
+        font-size: 13px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .slide-content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .slide-content h1 {
+        font-size: 28px;
+    }
+
+    .slide-content p {
+        font-size: 14px;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .category-card {
+        height: 200px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .product-image {
+        height: 180px;
+    }
+
+    .product-title {
+        font-size: 15px;
+    }
+
+    .current-price {
+        font-size: 16px;
+    }
 }
